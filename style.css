@@ -1,35 +1,132 @@
-h1 {font-family: "Dancing Script";
-    font-weight: 700;
-    color: #5E0D07;}
-
-body {font-family: "Roboto Serif";
-    background-color: #87302a;
-    color: #3FAB6C;
-    margin: 10px;}
-
-.titulo {color: #358155;}
-    
-a {text-decoration: none;
-    color: #3FAB6C;}
-    
-#foto {border-radius: 50%;
-    padding: 3px;
-    background-color: #358155;
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 45px;}
-
-.indice {padding: 40px;}
-
-#header{
-    display: inline;
-    border: 15px;
+/* Propriedades para a página toda */
+body {
+    background-color: #EBFFEF;
 }
 
-#nome {
+* {
+    margin: 0;
+}
+
+/* para todas as âncoras da página */
+a {
+    text-decoration: none;
+    color: #74A17D;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* estilizando a header */
+header {
+    font-family: "Rubik";
+    font-weight: 800;
+    size: 30px;
+    line-height: 15px;
+    text-shadow: 0px 4px 4px rgba(116, 161, 125, 0.25);
+    /* para facilitar o alinhamento */
+    display: flex; 
+    width: 100%;
+    /* para ficar fixo enquanto rolamos: */
+    position: fixed;
+    background-color: #EBFFEF;
+    top: 0;
+    align-items: center;
+    border-bottom: 2px solid #74A17D;
+}
+
+#logo1 {
+    width: 30px;
+    margin-left: 15px;
+}
+
+header nav {
+    text-align: right;
+    width: 100%;
+}
+
+.nav-link {
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 70px;
+}
+
+/* estilizando a main */
+#my-foto {
+    float: right;
+    margin-right: 25px;
+    width: 380px;
+    border-radius: 15px;
+}
+/* estilo no h1: */
+#home {
+    margin-top: 50px; 
+    margin-left: 30px;
+    color: #A33340;
+    font-family: "Rubik";
+    font-weight: 800;
+    text-shadow: 0px 4px 4px rgba(163, 51, 64, 0.25);
+    font-size: 48px;
+}
+
+#meu-texto{
+    font-family: "Inria Serif";
+    color: #A33340;
+    margin: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 700px;
+}
+
+/* para todos os títulos h2 */
+h2 {
+    font-family: "Rubik";
+    font-size: 25px;
+    line-height: 30px;
+    font-size: 36px;
+    margin: 30px 0 30px 30px;
+    text-shadow: 0px 4px 4px rgba(163, 51, 64, 0.25);
+    color: #A33340;
+    width: 500px;
+    font-weight: 800;
+    text-align: justify;
+}
+
+/* para a lista */
+ul {
+    font-family: "Inria Serif";
+    color: #A33340;
+    list-style:circle;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* hardskills */
+#hardskills {
+    color: #A33340;
+    font-family: "Inria Serif";
+    width: 100%;
     text-align: center;
 }
 
-ol li:nth-child(odd){
-    font-style: italic;
+#hardskills img {
+    margin: 20px;
+    width: 80px;
+}
+
+/* footer */
+footer {
+    border-top: 2px solid #74A17D;
+    text-align: center;
+}
+
+footer img:hover {
+    width: 40px;
+}
+
+footer img {
+    margin: 10px 30px;
+    width: 30px;
 }
