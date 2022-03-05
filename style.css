@@ -54,14 +54,12 @@ header nav {
 
 /* estilizando a main */
 #my-foto {
-    float: right;
-    margin-right: 25px;
+    margin-left: 150px;
     width: 380px;
     border-radius: 15px;
 }
 /* estilo no h1: */
-#home {
-    margin-top: 50px; 
+#titulo {
     margin-left: 30px;
     color: #A33340;
     font-family: "Rubik";
@@ -77,6 +75,14 @@ header nav {
     font-size: 20px;
     line-height: 30px;
     width: 700px;
+}
+
+/* posição do home e da foto */
+#home { 
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    height: 600px;
 }
 
 /* para todos os títulos h2 */
@@ -101,6 +107,11 @@ ul {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
+}
+
+#skills {
+    background-color: #74a17d7e;
+    height: 600px;
 }
 
 /* hardskills */
