@@ -1,143 +1,290 @@
-/* Propriedades para a página toda */
-body {
-    background-color: #EBFFEF;
-}
+/* iniciando com mobile: inspirado no modelo samsung galaxy a51 (412x914) */
 
 * {
-    margin: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: "Chakra Petch";
 }
 
-/* para todas as âncoras da página */
-a {
-    text-decoration: none;
-    color: #74A17D;
-}
-
-a:hover {
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-/* estilizando a header */
 header {
-    font-family: "Rubik";
-    font-weight: 800;
-    size: 30px;
-    line-height: 15px;
-    text-shadow: 0px 4px 4px rgba(116, 161, 125, 0.25);
-    /* para facilitar o alinhamento */
-    display: flex; 
-    width: 100%;
-    /* para ficar fixo enquanto rolamos: */
-    position: fixed;
-    background-color: #EBFFEF;
-    top: 0;
-    align-items: center;
-    border-bottom: 2px solid #74A17D;
+  background-color: rgba(112, 26, 61, 1);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  top: 0;
 }
 
-#logo1 {
-    width: 30px;
-    margin-left: 15px;
+header nav a, #about article p a{
+  color: rgba(147, 214, 208, 1);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+header nav a:hover, #about article p a:hover, #about-contact p a:hover  {
+  text-shadow: 1px 2px rgb(153, 66, 182);
 }
 
 header nav {
-    text-align: right;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.nav-link {
-    text-align: center;
-    margin-right: 15px;
-    margin-left: 70px;
+body {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color: rgba(56, 10, 71, 1);
 }
 
-/* estilizando a main */
-#my-foto {
-    margin-left: 150px;
-    width: 380px;
-    border-radius: 15px;
-}
-/* estilo no h1: */
-#titulo {
-    margin-left: 30px;
-    color: #A33340;
-    font-family: "Rubik";
-    font-weight: 800;
-    text-shadow: 0px 4px 4px rgba(163, 51, 64, 0.25);
-    font-size: 48px;
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#meu-texto{
-    font-family: "Inria Serif";
-    color: #A33340;
-    margin: 20px;
-    font-size: 20px;
-    line-height: 30px;
-    width: 700px;
+#home aside,#about article, #skills article, #contact article {
+  width: 90%;
 }
 
-/* posição do home e da foto */
-#home { 
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    height: 600px;
+#minha-foto, #aboutPicture {
+  width: 80%;
 }
 
-/* para todos os títulos h2 */
-h2 {
-    font-family: "Rubik";
-    font-size: 25px;
-    line-height: 30px;
-    font-size: 36px;
-    margin: 30px 0 30px 30px;
-    text-shadow: 0px 4px 4px rgba(163, 51, 64, 0.25);
-    color: #A33340;
-    width: 500px;
-    font-weight: 800;
-    text-align: justify;
+#home aside h1 {
+  margin-top: 45px;
+  color: rgba(27, 138, 121, 1);
+  font-weight: 600;
+  font-size: 35px;
 }
 
-/* para a lista */
-ul {
-    font-family: "Inria Serif";
-    color: #A33340;
-    list-style:circle;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
+#home aside h3 {
+  color: rgba(27, 138, 121, 1);
+  font-weight: 300;
+  font-size: 20px;
 }
 
-#skills {
-    background-color: #74a17d7e;
-    height: 600px;
+#home aside p, #skills article p {
+  color: #93D6D0;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 20px 0px;
 }
 
-/* hardskills */
-#hardskills {
-    color: #A33340;
-    font-family: "Inria Serif";
-    width: 100%;
-    text-align: center;
+#about, #skills, #contact{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  justify-content: space-around;
 }
 
-#hardskills img {
-    margin: 20px;
-    width: 80px;
+#about article h2, #contact article h2, #skills article h2 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 45px;
+  color: #1B8A79;
 }
 
-/* footer */
+#about article p {
+  margin: 20px 0px;
+  text-align: left;
+  font-weight: 300;
+  font-size: 24px;
+  color: #93D6D0;
+}
+
+#skills article h2, #contact article h2 {
+  text-align: left;
+}
+
+#soft, #hard {
+  background-color: #935799;
+  width: 70%;
+  height: 95px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  box-shadow: 5px 5px rgba(147, 87, 153, 0.5);
+  border-radius: 12px;
+}
+
+#soft-container {
+  display: none;
+  flex-direction: column;
+}
+
+#hard-container {
+  margin-top: 15px;
+  background-color: #93d6d0;
+  padding: 20px;
+  box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.5); 
+  border-radius: 30px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#hard-container img {
+  margin: 5px;
+  width: 24%;
+}
+
+#contact article {
+  text-align: center;
+}
+
+#contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contatos img {
+  width: 60%;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+#contatos img:hover {
+ cursor: pointer;
+}
+
+#container-redes {
+  display: flex;
+}
+
+#about-contact {
+  background-color: #93d6d0;
+  margin: 5px;
+  margin-left: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.5); 
+  border-radius: 30px;
+  color: #1B8A79;
+}
+
+#contact article p {
+  margin: 20px 0px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+#muda-cor {
+  color: #93d6d0;
+}
+
+#about-contact p {
+  color: #1B8A79;
+  text-align: center;
+}
+
+#about-contact p a {
+  text-decoration: none;
+  color: #1B8A79;
+}
+
+#about-contact h3 {
+  font-size: 25px;
+}
+
+iframe {
+  width: 90%;
+  height: 400px;
+}
+
 footer {
-    border-top: 2px solid #74A17D;
-    text-align: center;
+  background-color: rgba(112, 26, 61, 1);
+  right: 0;
+  margin-top: 50px;
+  color: #93D6D0;
+  font-size: 15px;
+  text-align: center;
+  padding: 3px;
 }
 
-footer img:hover {
-    width: 40px;
+span {
+  font-size: 24px;
+  font-weight: 600;
 }
 
-footer img {
-    margin: 10px 30px;
-    width: 30px;
+@media screen and (min-width: 1200px) {
+  header {
+   height: 55px;
+   justify-content: space-between;
+  }
+   
+   #home {
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   
+   #home aside,#about article, #skills article, #contact article {
+    width: 45%;
+  }
+  
+  #home aside h1 {
+    margin-top: 0;
+    font-size: 55px;
+  }
+
+  #about, #skills, #contact {
+  margin: 0;
+  }
+  
+  #about {
+    margin-top: 100px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  #skills, #contact {
+    margin-top: 100px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #about article h2, #about article p {
+    text-align: right;
+  }
+
+  #contact article h2, #skills article h2 {
+    text-align: left;
+  }
+  
+  .container-foto-home {
+    display: flex;
+    justify-content: right;
+  }
+
+  #soft, #hard {
+    background-color: #935799;
+    width: 260px;
+    height: 95px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 30px;
+    box-shadow: 5px 5px rgba(147, 87, 153, 0.5);
+    border-radius: 12px;
+  }
+  
+  #hard-container {
+    margin-top: 0;
+  }
+  
+  #minha-foto, #aboutPicture {
+    width: auto;
+    height: 630px;
+  }  
 }

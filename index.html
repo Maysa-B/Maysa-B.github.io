@@ -1,89 +1,142 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rubik:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- imagem na barra de navegação -->
-    <link rel="icon" href="image-removebg-preview.png" type="image/png">
-    <title>Maysa's site</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="img" href="/imgs/Component 2.png">
+  </link>
+  <title>My landing page</title>
 </head>
 
 <body>
-    <header>
-        <aside><img src="/image-removebg-preview.png" alt="my-logo" id="logo1"></aside>
-        <nav>
-            <a class="nav-link" href="#home">Home</a>
-            <a class="nav-link" href="#skills">Habilidades</a>
-            <a class="nav-link" href="#contatos">Contatos</a>
-        </nav>
-    </header>
-    <main>
-        <aside id="home"> 
-            <article>
-                <h1 id="titulo">Maysa Bonfante Salvalaio</h1>
-                <p id="meu-texto">Meu nome é Maysa Bonfante Salvalaio, sou brasileira e atualmente moro em Meleiro no
-                    estado
-                    de Santa Catarina
-                    (SC). Tenho 18 anos e sou formada como técnica em eletromecânica pelo Instituto Federal de Santa
-                    Catarina
-                    (IFSC). Além disso, estou cursando Desenvolvimento Web na <a href="https://www.betrybe.com/"
-                        target="_blank" id="trybe">Trybe</a>.
-                </p>
-                <br>
-            </article>
-            <img src="/o_1ft8jh5aq1dsf1md01cgornb19n11ct.jpg" alt="Minha Foto" id="my-foto">
-        </aside>
-        <section id="skills">
-            <div id="centralizar">
-            <h2 id="habilidades">Habilidades</h2>
-            <ul>
+  <header>
+    <section>
+      <img src="/imgs/Component 2.png" alt="Logo">
+    </section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="home">
+    <aside>
+      <h1>Maysa Bonfante Salvalaio</h1>
+      <h3>Estudante de desenvolvimento Web</h3>
+      <p>Bem vindo à minha landing page!
+        <br><br>
+        Essa página é feita com os meus conhecimentos como estudante da Trybe, e busca mostrar um pouco dos meus
+        conhecimentos e interesses. Aproveite na linguagem que preferir!
+      </p>
 
-                <li>Inglês Fluente;</li>
-                <li>Boa comunicação;</li>
-                <li>Fast-learning.</li>
-            </ul>
-            <br>
-    
-        <section id="hardskills">
-            <h2>Hard Skills</h2>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo CSS">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
-                alt="Logo Firebase">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Logo Figma">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Logo GIT">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Logo Linux">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Logo Slack">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Logo VS Code">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Logo Ubunto">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
-                alt="Logo Markdown">
-        </section></div></section>
-    </main>
+    </aside>
+    <aside class="container-foto-home"><img id="minha-foto" src="/imgs/o_1ft8jh5aq894c611vs6clk1lro1d2 1.png" alt="My Picture"></aside>
+  </section>
+  <section id="about">
+    <article>
+      <h2>About me</h2>
+      <p>Tenho 18 anos, nasci e moro no Brasil. Sou formada como <span>técnica em Eletromecânica</span>, curso que fiz
+        integrado ao meu ensino médio.
+      </p>
+      <p>
+        Durante esse tempo, fui <span>monitora</span> de duas disciplinas, ajudando os alunos com dificuldades. Além
+        disso participei de um projeto que resultou em um artigo e um livro, o qual você pode conferir clicando <a
+          href="https://www.ifsc.edu.br/noticia/2247467/professor-e-estudante-do-c%C3%A2mpus-ararangu%C3%A1-lan%C3%A7am-livro-sobre-desenvolvimento-de-servi%C3%A7os-inclusivos"
+          target="_blank"><span>aqui</span></a>.
+      </p>
+      <p>
+        Atualmente sou estudante de <span>Desenvolvimento Web</span> na Trybe.
+      </p>
+      <p>Aprecio muito passar tempo em família (incluindo meus pets), praticando atividade física, lendo e codando.
+      </p>
+      <p>
+        Defendo fortemente a <span>igualdade</span> entre todos, sendo contra qualquer tipo de preconceito. Valorizo
+        ambientes
+        integradores, nos quais todos são tratados da mesma forma e possuem as mesmas oportunidades.
+      </p>
+    </article>
+    <article>
+      <img src="/imgs/Frame 1.png" id="aboutPicture" alt="My collage">
+    </article>
+  </section>
+  <section id="skills">
+    <article>
+      <h2>Skills</h2>
+      <p>
+        Nessa seção apresento os dois tipos de habilidades que venho trabalhando para deservolver:
+        <span>SoftSkills</span> e <span>HardSkills</span>.
+      </p>
+      <div id="soft">
+        <img src="/imgs/brain (1) 1.png" alt="SoftSkills">
+        <p>SoftSkills</p>
+      </div>
+      <div id="hard">
+        <img src="/imgs/web-programming (1) 1.png" alt="HardSkills">
+        <p>HardSkills</p>
+      </div>
+    </article>
+    <article id="content-skills">
+      <section id="soft-container">
+        <p>
+          <span>Comunicação</span> é uma das habilidades mais importante, conseguir transmitir corretamente nossos
+          pensamentos.
+        </p>
+        <p>
+          <span>Autoconhecimento</span>, proporciona uma descoberta pessoal, nos mostrando quais são nossos valores e
+          crenças.
+        </p>
+        <p>
+          <span>Feedbacks</span> foram o maior aprendizado até o momento, saber como dizer a alguém como melhorar ou
+          quais são seus pontos fortes.
+        </p>
+      </section>
+      <section id="hard-container">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo CSS">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Logo GIT">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg"
+          alt="Logo Markdown">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Logo Slack">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+          alt="Logo Firebase">
+      </section>
+    </article>
+  </section>
+  <section id="contact">
+    <article>
+      <h2>Contact</h2>
+      <p id="muda-cor">Para dúvidas e sugestões, entre em contato comigo!</p>
+      <div id="container-redes">
+        <div id="contatos">
+          <p><img id="mail" src="/imgs/email.png" alt="my email"></p>
+          <p><img id="github" src="/imgs/github.png" alt="logo github"></p>
+          <p><img id="linkedin" src="/imgs/linkedin.png" alt="linkedin"></p>
+        </div>
+        <div id="about-contact">
+        </div>
+      </div>
+    </article>
+    <article>
+      <img src="/imgs/WhatsApp_Image_2022-03-14_at_20.55 1.png" alt="">
+    </article>
 
-    <footer id="contatos">
-        <a href="https://www.linkedin.com/in/maysa-salvalaio-161a2815a/" target="_blank"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                alt="Logo LinkeIn"></a>
-        <a href="https://github.com/Maysa-B" target="_blank"><img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="Logo GitHub"></a>
-    </footer>
+  </section>
 
+  <footer>
+    <p>Maysa Salvalaio, 2022</p>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
